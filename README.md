@@ -54,3 +54,4 @@
 - Express uygulamasını belirlediğiniz bir portta dinleyerek sunucu başlatın (örn: `app.listen(PORT, () => { ... })`).
 - Models klasöründe veritabanı şemalarınızı tanımlayın ve bu şemaları modele çevirerek MongoDB ile etkileşime geçin.
 - Routers klasöründe farklı endpointlere göre işlemleri tanımlayın ve bu routerları ana uygulamaya bağ
+- Projedeki CORS policy yönetmek için cors paketi kuruyoruz. (npm i cors) Bu paket sayesinde her originden gelen istekleri kabul edebiliriz. örn: app.use(cors()); veya örn: app.use(cors({origin: 'http://localhost:3000'}));
