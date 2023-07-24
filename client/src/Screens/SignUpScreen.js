@@ -22,7 +22,10 @@ const SignUpScreen = () => {
 
               register(formData)
                 .then((res) => {
-                  navigate("/signin");
+
+                  if(res){
+                    navigate("/signin");
+                  }
                 })
                 .catch((err) => console.log(err));
             }}
